@@ -22,34 +22,23 @@ clear - clears e'/t on shell
 mkdir - make a directory 
 
 ##### the redirect symbol '>'
-pwd
-cat
-conda list
-conda info --envs
-conda install 'package'
-history
-| 	#pipe symbol
-grep
-sudo
-append to the end of a file with ">>"
+pwd - shows where u are 
+
+cat - display file info 
+
+conda list - shows all packs 
+conda info --envs - lists all environments 
+conda install 'package' - install a certain package 
+history - lists all commands 
+| 	#pipe symbol - input /output system 
+grep - 
+sudo - 
+append to the end of a file with ">>" 
 less is more
-cp
-mv
-echo
-touch
-tr
-scp
-## Dr. Edgington will cover these commands on 09-17-18:
-wget    #(retreive a data file from phagesdb.org)
-## Bash loops with 
-cut
-wc
-sort
-uniq
-& and && and ;
-chmod
-ssh
-ps
-kill
-nohup	
-# Also see most of these bash commands in Appendix 3 of the "Practical Computing for Biologists" textbook, and Ch.4 & 5 have been assigned as well (in the syllabus)
+cp - copy files and dir 
+mv - move files and dirs
+echo - echo back to computer 
+touch - create a new file 
+tr - 
+scp - securely 
+
