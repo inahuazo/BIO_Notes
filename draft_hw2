@@ -1,0 +1,34 @@
+def clean_seq(DNASeq="ATCGTAGCTAGCTGAC"):
+    '''This function takes a sequence as input, 
+    and returns it in the upper case and with any spaces removed'''
+    DNASeq = DNASeq.upper().replace(" ","")
+    #print('Sequences:',DNASeq)
+    return DNASeq
+
+clean_seq()
+
+
+def GC_calc(seq):
+    '''Returns the % of found C and G components in '''
+    seqLength = float(len(seq))
+    numA = seq.count('A')
+    numT = seq.count('T')
+    numC = seq.count('C')
+    numG = seq.count('G')
+    percentGC = format(float(((numC+numG)/seqLength)*100), '.2f')
+    print("Your sequence is valid. Here is your GC%: ", percentGC)
+
+def validate_seq(seq = clean_seq()):
+    if set(seq) == set('ATCG'):
+        print("Your sequence is valid--Good Job!")
+        return True
+    else:
+        print("Please enter a valid sequence that only contains A,T,C, or G!")
+        return False 
+        
+if validate_seq() == True:
+    GC_calc(clean_seq())
+    
+validate_seq("ATGCDTGACTACGT")
+
+validate_seq(clean_seq("AT   GCGT ggc CTACGT"))
